@@ -45,7 +45,7 @@ def test(label, files, expected=0, coverage=False, cwd=work):
     args = [python, "-m", "pytest", *files, "-q", "--tb=short",
             "--junitxml=" + str(evidence / (label + ".xml"))]
     if coverage:
-        module = "materialite.importers" if is_material else "heatsspy.HE_files.LMTD"
+        module = "materialite" if is_material else "heatsspy.HE_files.LMTD"
         args += ["--cov=" + module, "--cov-branch",
                  "--cov-report=json:" + str(evidence / "coverage.json")]
     run(label, args, expected=expected, cwd=cwd)
