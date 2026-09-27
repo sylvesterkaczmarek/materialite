@@ -1,0 +1,12 @@
+{
+  "base": "4306be9ca4f12c6b17435038d409a1e9a7a294d5",
+  "base_branch": "main",
+  "repo": "nasa/materialite",
+  "issue_url": "https://github.com/nasa/materialite/issues/1",
+  "issue": 1,
+  "branch": "fix/dream3d-feature-id-indexing-20260927",
+  "head": "d6d0b8cd569094c1b51cf36d86d59281e66c728d",
+  "title": "Index DREAM.3D feature properties by the IDs present in cells",
+  "source": "materialite/importers.py",
+  "test": "tests/test_dream3d_region_ids.py"
+}
